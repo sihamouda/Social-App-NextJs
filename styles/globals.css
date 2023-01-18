@@ -1,38 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  font-family: "Nunito";
-}
-a {
-  color: rgb(27, 83, 237);
-  text-decoration: none;
-}
-.content {
-  max-width: 960px;
-  margin: 0 auto;
-}
 nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25%;
 }
-nav a {
-  margin-left: 12px;
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px;
 }
-nav div {
-  color: rgb(0, 0, 0);
-  margin-right: auto;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 25%;
 }
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
-  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 30px 0;
-  margin-top: 60px;
-  color: #777;
-  border-top: 1px solid #eaeaea;
 }
